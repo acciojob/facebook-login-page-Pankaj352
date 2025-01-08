@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <div class="container">
+      <!-- Left Section -->
+      <div class="left-section">
+        <h1>facebook</h1>
+        <p>
+          Facebook helps you connect and share with the people in your life.
+        </p>
+      </div>
 
-<body>
-	<div class="container">
-		<div class="facebook-logo-container">
-			<h1 class="logo">facebook</h1>
-			<p>Facebook helps you connect and share with the people in your life.</p>
-		</div>
-		<div class="login-container">
-			<form action="" method="">
-				<input type="text" placeholder="Email address or phone number"/>
-				<input type="password" placeholder="Password"/>
-				<button type="submit" class="login">Log in</button>
-				<div class="forget-link">
-					<a href="">Forgetten account?</a>
-				</div>
-    <hr>
-			<div class="new-account">
-    	<button type="submit" class="new-acc-btn">Create new account</button>
-   </div>
-			</form>
-		</div>
-	</div>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+      <!-- Right Section -->
+      <div class="right-section">
+        <form>
+          <div class="form-group">
+            <input type="text" placeholder="Email address or phone number" />
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Password" />
+          </div>
+          <button type="button" class="login-button">Log in</button>
+          <a href="#" class="forgot-link">Forgotten account?</a>
+          <hr />
+          <div class="create-account-box">
+           <button type="button" class="create-account">
+            Create new account
+          </button>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+    <!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
 </html>

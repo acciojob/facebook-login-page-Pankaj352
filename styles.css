@@ -1,86 +1,165 @@
-/*  your css code here. If applicable */
 body {
-  background-color: #f2f4f7;
-  font-family: sans-serif;
-    height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
+
 .container {
   display: flex;
-  margin: 100px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  margin: 20px;
 }
-.facebook-logo-container {
-  margin: 0;
-  width: 400px;
-  height: fit-content;
+
+.left-section {
+  flex: 1;
+  margin-bottom: 20px;
+  margin-right: 20px;
 }
-.logo {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 3rem;
-  font-weight: 800;
+
+.left-section h1 {
   color: #1877f2;
-}
-p {
- font-family: sans-serif;
- letter-spacing: normal;
-  font-size: 2rem;
+  font-size: 48px;
+  margin: 0;
 }
 
-.login-container {
-	height: fit-content;
-  width: 396px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 20px 30px 20px 20px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1);
-  border: none;
-  border-radius: 8px;
-}
-input {
-  color: #1c1e21;
-  border-radius: 6px;
-  font-size: 17px;
-  padding: 14px 16px;
-  width: -webkit-fill-available;
-  margin: 10px 0;
-  border: 1px solid #dddfe2;
-}
-
-.login {
-  width: 100%;
-  padding: 0 16px;
-  line-height: 48px;
+.left-section p {
   font-size: 20px;
+  color: #606770;
+  margin: 10px 0 0;
+}
+
+.right-section {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.login-button {
+  width: 100%;
+  padding: 10px;
   background-color: #1877f2;
   color: #fff;
+  font-size: 16px;
   border: none;
-  margin: 10px 0;
   border-radius: 5px;
+  cursor: pointer;
 }
-.forget-link {
+
+.login-button:hover {
+  background-color: #145dbf;
+}
+
+.forgot-link {
+  display: block;
   text-align: center;
   margin: 10px 0;
-}
-.forget-link > a {
   color: #1877f2;
-  font-size: 20px;
   text-decoration: none;
+  font-size: 14px;
 }
-hr {
-  border: 1px solid gray;
-}
-.new-account {
+
+.create-account-box{
  display: flex;
-  justify-content: center;
-  text-align: center;
+ justify-content: center;
+ text-align: center;
 }
-.new-acc-btn {
-  padding: 0 16px;
-  line-height: 48px;
-  font-size: 20px;
-  background-color: #27c62f;
+
+
+.create-account {
+  background-color: #42b72a;
   color: #fff;
+  padding: 10px;
+  font-size: 16px;
   border: none;
   border-radius: 5px;
-  margin: 10px 0;
-  display: flex;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.create-account:hover {
+  background-color: #36a420;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-section {
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .right-section {
+    margin-left: 0;
+  }
+
+  .left-section h1 {
+    font-size: 36px;
+  }
+
+  .left-section p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-section h1 {
+    font-size: 28px;
+  }
+
+  .left-section p {
+    font-size: 14px;
+  }
+
+  .right-section {
+    padding: 15px;
+  }
+
+  .form-group input {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .login-button,
+  .create-account {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .forgot-link {
+    font-size: 12px;
+  }
 }
